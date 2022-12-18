@@ -14,8 +14,7 @@ cd /etc/samba/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero-fix
 sudo mkdir -p /var/lib/samba/usershares
 sudo chown root:sambashare /var/lib/samba/usershares
 sudo chmod 1770 /var/lib/samba/usershares
-sudo systemctl disable smb
-sudo systemctl mask smb
+sudo systemctl enable --now smb
 echo "#################################"
 echo "   Done Please Reboot To Apply   "
 echo "#################################"
